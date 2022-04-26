@@ -19,7 +19,7 @@
     <body>
 
         <header>
-            <div class="logo">
+            <div class="logo_header">
                 <img src="./assets/imgs/Logo_1" alt="logo">
             </div>
     
@@ -32,7 +32,9 @@
                 </ul>
             </nav>
 
-            <button id="discover_button">Découvrir</button>
+            <div class="dicover_button_container">
+                <button id="discover_button">Découvrir</button>
+            </div>
 
         </header>
 
@@ -42,8 +44,14 @@
             </svg>
 
             <div class="section_container">
-                <h1 id="Project_title_text">Project</h1>
-                <div class="box_project">
+
+                <div class="Title_text_container">
+                    <h1 id="Project_title_text">Project</h1>
+                    <div class="underline_title_project"></div>
+                </div>
+
+                
+                <div class="box_project_container">
                     <div class="project_Box">
                         <h1>Projet voiture</h1>
                     </div>
@@ -54,11 +62,17 @@
                         <h1>Projet voiture</h1>
                     </div>
                 </div>
+    
+                <div class="Title_text_container">
+                    <h1 id="Security_title_text">Security Imformatique</h1>
+                    <div class="underline_title_security"></div>
+                </div>
 
-                <h1 id="Security_title_text">Security Imformatique</h1>
+                
                 <div class="box_presentation_security">
                     <p id="text_presentation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore praesentium vel cumque esse minima, a distinctio sequi nulla cupiditate? Tenetur optio quibusdam illum dolore eius, labore beatae mollitia iusto impedit?</p>
                 </div>
+                
             </div>
         </section>
 
@@ -76,7 +90,7 @@
                             Votre message:
                             <textarea name="message"></textarea>
                         </label>
-                        <!-- your other form fields go here -->
+                        
                         <button id="submit" type="submit">Envoyer</button>
                     </form>
                 </div>
@@ -90,7 +104,7 @@
 
 
 
-        <script type="module" src="src/index.ts"></script>
+        <script type="module" src="src/index.js"></script>
 
     </body>
 </html>

@@ -11,15 +11,16 @@ body {
     min-height: 100vh;
     background: white;
     color: #1f1f1f;
+    position: relative;
 }
 
-.logo {
+.logo_header {
     position: absolute;
     top: 10px;
     left: 10px; 
 }
 
-.logo img {
+.logo_header img {
     height: 200px;
     width: 150px;
 }
@@ -31,50 +32,106 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    margin: 20px;
+    margin: 30px;
 }
 
 nav ul li {
+    font-size: 1.3rem;
     padding: 0 40px;
     cursor: pointer;
 }
 
-#discover_button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 25%;
+nav ul li:hover {
+    text-decoration: underline 4px;
+}
 
-    font-size: large;
+.dicover_button_container {
+    position: absolute;
+    top: 28%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+#discover_button {
+    font-size: 1.5rem;
     
     border: 2px solid #1f1f1f;
     border-radius: 5px;
     background: white;
-    padding: 10px;
+    padding: 10px 20px;
     width: 150px;
+    transition: 0.3s ease;
 
     cursor: pointer;
 }
 
-.section_container, .footer_container {
-    color: white;
+#discover_button:hover {
     background: #1f1f1f;
-    height: 100%;
+    border: 2px solid white;
+    color: white;
 }
 
-#Project_title_text, #Security_title_text, #Contact_title_text {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 2rem;
+#discover_button:active {
+    transform: scale(0.9);
 }
 
-.box_project {
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    height: 40%;
+svg {
+    position: absolute;
+    top: 25%;
+}
+
+.section_container {
+    color: white;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 65%;
+    background: #1f1f1f;
+    height: 100vh;
+}
+
+.Title_text_container {
+    position: relative;
+}
+
+#Project_title_text {
     padding: 10px;
-    margin: 45px auto;
+    margin: 20px 150px;
+    font-size: 2.5rem;
+}
+
+#Security_title_text {
+    padding: 10px;
+    margin: 20px 150px;
+    font-size: 2.5rem;
+}
+
+.underline_title_security {
+    bottom: 0;
+    left: 160px;
+    position: absolute;
+    width: 410px;
+    height: 5px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(31,31,31,1) 91%);
+}
+
+.underline_title_project {
+    bottom: 0;
+    left: 160px;
+    position: absolute;
+    width: 140px;
+    height: 5px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(31,31,31,1) 91%);
+}
+
+.box_project_container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 150px 0;
+    width: 100%;
+    height: 250px;
 }
 
 .project_Box {
@@ -83,7 +140,7 @@ nav ul li {
     align-items: center;
 
     background: #1f1f1f;
-    width: 100%;
+    width: 350px;
     margin: 15px;
     font-size: 1.5rem;
 
@@ -101,7 +158,7 @@ nav ul li {
     padding: 15px;
 }
 
-.div_box_container {
+/* .div_box_container {
     display: flex;
     justify-content: center;
     margin: 50px;
@@ -134,4 +191,10 @@ textarea {
     border-radius: 10px;
     margin: 15px 0;
     cursor: pointer;
+} */
+
+.footer_container {
+    background: red;
+    position: absolute;
+    bottom: 0;
 }
