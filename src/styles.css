@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: white;
+    color: #1f1f1f;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+}
+
+.logo img {
+    height: 200px;
+    width: 150px;
+}
+
+nav {
+    margin-left: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 20px;
+}
+
+nav ul li {
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+#discover_button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+
+    font-size: large;
+    
+    border: 2px solid #1f1f1f;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    width: 150px;
+
+    cursor: pointer;
+}
+
+.section_container, .footer_container {
+    color: white;
+    background: #1f1f1f;
+    height: 100%;
+}
+
+#Project_title_text, #Security_title_text, #Contact_title_text {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.box_project {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 40%;
+    padding: 10px;
+    margin: 45px auto;
+}
+
+.project_Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #1f1f1f;
+    width: 100%;
+    margin: 15px;
+    font-size: 1.5rem;
+
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.box_presentation_security {
+    margin: 40px auto;
+    width: 70%;
+}
+
+#text_presentation {
+    text-align: center;
+    padding: 15px;
+}
+
+.div_box_container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 100px);
+    width: 65%;
+}
+
+input[type=email] {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+textarea {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    resize: vertical
+}
+
+#submit {
+    font-size: larger;
+    height: 50px;
+    border-radius: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
