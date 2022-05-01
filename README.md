@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="./assets/imgs/Capture.PNG" alt="Logo" width="80" height="80">
+    <img src="./assets/imgs/Capture.PNG" alt="Logo" width="100%">
   </a>
 
 <h3 align="center">Website</h3>
