@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="./imgs/Capture.PNG" alt="Logo" width="80" height="80">
+    <img src="./assets/imgs/Capture.PNG" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Website</h3>
@@ -14,8 +14,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://avatars.githubusercontent.com/u/95101715?v=4)
 
 Voici un Site Web pour présenter tous mes Project ainsi que mes skills :)
 
