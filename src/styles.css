@@ -12,10 +12,11 @@ html, body {
 }
 
 body {
-    min-height: 250vh;
+    min-height: 270vh;
     background: white;
     color: #1f1f1f;
     position: relative;
+    user-select: none;
 }
 
 nav > img {
@@ -202,17 +203,28 @@ textarea {
     margin: 15px;
     padding: 5px;
     font-size: 1rem;
-    resize: vertical;
+    resize: none;
     width: 70%;
     border-radius: 5px;
 }
 
 #email-container, #message-container {
-    width: 40%;
+    width: 50%;
     font-size: 1.5rem;
     display: flex;
-    align-items: center;
     justify-content: center;
+}
+
+#email-container {
+    align-items: center;
+}
+
+#message-container {
+    margin: 0 35px 0 0;
+}
+
+#text-message-container {
+    margin-top: 15px;
 }
 
 #submit {
